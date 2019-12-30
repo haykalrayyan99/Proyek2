@@ -259,7 +259,7 @@ public class LoginActivity extends AppCompatActivity {
                         editor.commit();
 
                         // Memanggil main activity
-                        Intent intent = new Intent(LoginActivity.this, daftarMenu.class);
+                        Intent intent = new Intent(LoginActivity.this, com.rayyan.proyek2.user.MenuActivity.class);
                         intent.putExtra(TAG_ID1, id);
                         intent.putExtra(TAG_USERNAME1, username);
                         finish();

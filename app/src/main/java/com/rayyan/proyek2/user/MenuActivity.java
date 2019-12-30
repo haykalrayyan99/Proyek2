@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.rayyan.proyek2.LoginActivity;
 import com.rayyan.proyek2.R;
+import com.rayyan.proyek2.daftarMenu;
 import com.rayyan.proyek2.user.Tenda.Tenda;
 
 public class MenuActivity extends AppCompatActivity {
@@ -23,6 +25,7 @@ public class MenuActivity extends AppCompatActivity {
 
 
     public void healderExit(View view) {
-        finish();
+        Intent intent = new Intent(MenuActivity.this, LoginActivity.class);
+        startActivity(intent);
     }
 }
